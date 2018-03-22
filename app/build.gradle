@@ -69,6 +69,6 @@ dependencies {
     compile name:"SMSSDK-2.0.2",ext:"aar"
     compile name:'SMSSDKGUI-2.0.2',ext:"aar"
     compile project(":library")
-    compile project(":PushSDK")
+    compile project(":pushSDK")
     compile project(":umeng_sharelibrary")
 }
