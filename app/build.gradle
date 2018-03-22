@@ -63,12 +63,12 @@ dependencies {
     compile "com.squareup.retrofit2:adapter-rxjava:$rootProject.ext.retrofit"
     compile "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp"
     compile "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttp"
-    compile "io.reactivex:rxandroid:$rootProject.ext.rxandroid"
+    compile "io.reactivex:rxandroid:$rootProject.ext.rxandroidVersion"
     compile "com.orhanobut:dialogplus:$rootProject.ext.dialogplus"
     compile "com.vanniktech:emoji:$rootProject.ext.emoji"
     compile name:"SMSSDK-2.0.2",ext:"aar"
     compile name:'SMSSDKGUI-2.0.2',ext:"aar"
-    compile project(":library")
+    compile project(":appFrameLib")
     compile project(":pushSDK")
     compile project(":umeng_sharelibrary")
 }

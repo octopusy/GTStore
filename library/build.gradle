@@ -23,4 +23,6 @@ dependencies {
     compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
     testCompile "junit:junit:$rootProject.ext.junit"
     compile "com.orhanobut:logger:$rootProject.ext.loggerVersion"
+    compile "com.luffykou:android-common-utils:$rootProject.ext.commonUtils"
+
 }

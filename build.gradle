@@ -30,15 +30,21 @@ ext {
     versionCode = 1000
     versionName = "1.0.0"
 
-    // Sdk and tools
     minSdkVersion = 17
-    targetSdkVersion = 23
-    compileSdkVersion = 23
-    buildToolsVersion = '23.0.3'
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
 
     // App dependencies
-    supportLibraryVersion = '23.4.0'
+    supportLibraryVersion = '27.0.2'
     junit = '4.12'
+
+    multidexVersion = "1.0.2"
+    rxjavaVersion = '2.1.5'
+    rxandroidVersion = '2.0.1'
+    rxLifecycleVersion = '2.2.0'
+    rxpermissionsVersion = '0.9.4@aar'
+    rxbindingVersion = '2.0.0'
 
     okio = '1.6.0'
     wireRunTime = '2.1.2'
@@ -53,11 +59,11 @@ ext {
     gson = '2.4'
     retrofit = '2.0.0-beta3'
     okhttp = '3.0.0-RC1'
-    rxandroid = '1.1.0'
     dialogplus = '1.11@aar'
     emoji = '0.3.0'
 
     loggerVersion = "2.1.1"
+    commonUtils = '1.1.3'
 
     UMENG_APPKEY = '576beb9467e58e2df20013c1'
     UMENG_MESSAGE_SECRET = '9bd80de6d4aa59c213fdd7474dd73b10'

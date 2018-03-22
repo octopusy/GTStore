@@ -181,7 +181,7 @@
                 android:layout_marginLeft="10dip"
                 android:layout_marginTop="5dip"
                 android:gravity="center"
-                android:text="https://github.com/Shuyun123/LKShop"
+                android:text="https://github.com/Shuyun123/GTStore"
                 android:textColor="@color/textColor_gray"
                 android:textSize="@dimen/text_size_14sp" />
 

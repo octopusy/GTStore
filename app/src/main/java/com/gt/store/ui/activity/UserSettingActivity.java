@@ -369,7 +369,7 @@ public class UserSettingActivity extends BaseThemeSettingActivity {
 
 
     public File saveFile(Bitmap bm) throws IOException {
-        String path = Environment.getExternalStorageDirectory() + "/LKShop/HeadIcon/";
+        String path = Environment.getExternalStorageDirectory() + "/GTStore/HeadIcon/";
         File dirFile = new File(path);
         if (!dirFile.exists()) {
             dirFile.mkdir();

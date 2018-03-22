@@ -169,7 +169,6 @@ public class MainActivity extends BaseThemeSettingActivity {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         UpdateUtils.init(this).getAppInfo(0);
-
     }
 
 

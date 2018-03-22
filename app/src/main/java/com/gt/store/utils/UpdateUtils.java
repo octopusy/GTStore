@@ -1,6 +1,7 @@
 package com.gt.store.utils;
 
 import android.annotation.TargetApi;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -43,15 +44,10 @@ import retrofit2.Response;
  */
 public class UpdateUtils {
 
-
     private static Context mContext;
-
     private  String fileName;
-
     private  String path;
-
     private static UpdateUtils singleton;
-
 
     public static UpdateUtils init(Context context) {
         mContext = context;
@@ -79,7 +75,7 @@ public class UpdateUtils {
                         createDialog(versionCode, versionName, appPath, updateContent);
                     } else {
                         if (updateType == 1) {
-                            android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(mContext);
+                            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
                             builder.setTitle("检查更新");
                             builder.setMessage("已是最新版本~");
                             builder.setPositiveButton("确定", null);
@@ -104,8 +100,6 @@ public class UpdateUtils {
      * 更新App
      */
     public  void updateApp(final String versionCode, String versionName, String appPath, String updateContent) {
-
-
         final ProgressDialog dialog = new ProgressDialog(mContext);
         dialog.setProgressNumberFormat("%1d KB/%2d KB");
         dialog.setTitle("下载");
@@ -113,7 +107,6 @@ public class UpdateUtils {
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         dialog.setCancelable(true);
         dialog.show();
-
 
         ProgressHelper.setProgressHandler(new DownloadProgressHandler() {
             @Override
@@ -130,9 +123,8 @@ public class UpdateUtils {
         UpdateAppModel.updateApp(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Response<ResponseBody> response) {
-
                 try {
-                    path = Environment.getExternalStorageDirectory() + "/LKShop/Apk/";
+                    path = Environment.getExternalStorageDirectory() + "/GTStore/Apk/";
                     InputStream is = response.body().byteStream();
                     File dirFile = new File(path);
                     if (!dirFile.exists()) {
@@ -168,7 +160,7 @@ public class UpdateUtils {
 
     public  void installApk(String filePath) {
         if (filePath == null) {
-            filePath = Environment.getExternalStorageDirectory() + "/LKShop/Apk/"+fileName;
+            filePath = Environment.getExternalStorageDirectory() + "/GTStore/Apk/"+fileName;
         }
         File file = new File(filePath);
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -191,7 +183,7 @@ public class UpdateUtils {
                 switch (view.getId()) {
                     case R.id.update_now:
                         dialog.dismiss();
-                        final String filePath = Environment.getExternalStorageDirectory() + "/LKShop/Apk/" + BaseUtils.Md5(versionCode) + ".apk";
+                        final String filePath = Environment.getExternalStorageDirectory() + "/GTStore/Apk/" + BaseUtils.Md5(versionCode) + ".apk";
                         File file = new File(filePath);
                         if (!file.exists()) {
                             updateApp(versionCode, versionName, appPath, updateContent);

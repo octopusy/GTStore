@@ -29,13 +29,11 @@ public class BaseWebActivity extends AppCompatActivity {
     private String mWebUrl = null;
     private String mWebTitle = null;
 
-
     @BindView(R.id.base_web_toolbar)
     Toolbar toolbar;
 
     @BindView(R.id.base_web_browser_layout)
     BrowserLayout browserLayout;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

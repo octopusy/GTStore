@@ -23,7 +23,6 @@ import butterknife.OnClick;
  */
 public class AboutActivity extends BaseThemeSettingActivity {
 
-
     @BindView(R.id.about_toolbar)
     Toolbar toolbar;
 
@@ -87,26 +86,26 @@ public class AboutActivity extends BaseThemeSettingActivity {
         android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(AboutActivity.this);
         switch (view.getId()) {
             case R.id.about_app:
-                builder.setTitle("洛克商城");
+                builder.setTitle("广淘");
                 String describeApp = getResources().getString(R.string.describe_app);
                 builder.setMessage(describeApp);
                 builder.show();
                 break;
             case R.id.setting_app_version:
-                builder.setTitle("洛克商城");
+                builder.setTitle("广淘");
                 String appVersion = "当前版本: " + JUtils.getAppVersionName();
                 builder.setMessage(appVersion);
                 builder.show();
                 break;
             case R.id.about_me:
-                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://www.anumbrella.net");
+                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://octopusy.github.io/");
                 extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, "关于我");
                 Intent intent = new Intent(this, BaseWebActivity.class);
                 intent.putExtras(extras);
                 startActivity(intent);
                 break;
             case R.id.about_github:
-                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://github.com/Shuyun123/LKShop");
+                extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "https://github.com/octopusy/GTStore.git");
                 extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, "Github");
                 Intent intentGithub = new Intent(this, BaseWebActivity.class);
                 intentGithub.putExtras(extras);

@@ -10,11 +10,8 @@ import android.widget.ImageView;
 
 import com.gt.store.utils.PreferenceUtils;
 import com.umeng.message.PushAgent;
-
 import com.gt.store.R;
-
 import java.util.Random;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -22,15 +19,13 @@ import butterknife.ButterKnife;
  * author：Richard
  * Date：16/5/29 上午9:36
  */
-public class ApplicationActiivty extends AppCompatActivity {
+public class GuideActiivty extends AppCompatActivity {
 
     /**
      * 定义三个切换动画
      */
     private Animation mFadeIn;
-
     private Animation mFadeOut;
-
     private Animation mFadeInScale;
 
 
@@ -80,7 +75,7 @@ public class ApplicationActiivty extends AppCompatActivity {
 
             public void onAnimationStart(Animation animation) {
                 Intent intent = new Intent();
-                intent.setClass(ApplicationActiivty.this, MainActivity.class);
+                intent.setClass(GuideActiivty.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }

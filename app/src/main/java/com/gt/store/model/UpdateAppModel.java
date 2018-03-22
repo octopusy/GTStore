@@ -30,7 +30,6 @@ public class UpdateAppModel {
                 .enqueue(callback);
     }
 
-
     public static void updateApp(Callback<ResponseBody> callback, String pathApp) {
         OkHttpClient.Builder builder = ProgressHelper.addProgress(null);
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();

@@ -50,18 +50,17 @@ public class App extends Application {
         if (BaseUtils.readLocalUser(App.this) == null) {
             initLocalUserData();
         }
-        String path = Environment.getExternalStorageDirectory() + "/LKShop/";
+        String path = Environment.getExternalStorageDirectory() + "/GTStore/";
         File dirFile = new File(path);
         if (!dirFile.exists()) {
             dirFile.mkdir();
         }
 
-        //mob短信验证初始化  
+        // mob短信验证初始化
         // TODO: 2018/3/22 zhanghuan 暂时屏蔽接入MOB短信验证服务
         // SMSSDK.initSDK(this, "14359dfc08d04", "720a87f2ddcd958ab3b4d7b987b41f38");
 
         registerActivityLifecycleCallbacks(JActivityManager.getActivityLifecycleCallbacks());
-
     }
 
 

@@ -1,1 +1,1 @@
-include ':app', ':library', ':pushSDK', ':umeng_sharelibrary'
+include ':app', ':library', ':pushSDK', ':umeng_sharelibrary',':appFrameLib'

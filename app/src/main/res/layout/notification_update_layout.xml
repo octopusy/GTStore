@@ -19,7 +19,7 @@
         android:layout_toRightOf="@+id/notificationImage"
         android:paddingLeft="6dp"
         android:textSize="@dimen/text_size_20sp"
-        android:text="正在下载:洛克商城"
+        android:text="正在下载:广淘"
         android:textColor="@color/white" />
 
 
