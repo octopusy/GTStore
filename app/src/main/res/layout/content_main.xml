@@ -7,9 +7,9 @@
     android:layout_marginBottom="55dip"
     android:background="@color/milk_white"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.activity.MainActivity">
+    tools:context="net.gt.store.com.gt.store.ui.activity.MainActivity">
 
-    <net.anumbrella.lkshop.widget.MyViewPager
+    <com.gt.store.widget.MyViewPager
         android:id="@+id/content_viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

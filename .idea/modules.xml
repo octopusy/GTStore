@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LKShop.iml" filepath="$PROJECT_DIR$/LKShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GTStore.iml" filepath="$PROJECT_DIR$/GTStore.iml" />
+      <module fileurl="file://E:\code_github\LKShop\LKShop.iml" filepath="E:\code_github\LKShop\LKShop.iml" />
       <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://E:\code_github\LKShop\PushSDK\PushSDK.iml" filepath="E:\code_github\LKShop\PushSDK\PushSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\code_github\LKShop\app\app.iml" filepath="E:\code_github\LKShop\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://E:\code_github\LKShop\library\library.iml" filepath="E:\code_github\LKShop\library\library.iml" />
       <module fileurl="file://$PROJECT_DIR$/umeng_sharelibrary/umeng_sharelibrary.iml" filepath="$PROJECT_DIR$/umeng_sharelibrary/umeng_sharelibrary.iml" />
+      <module fileurl="file://E:\code_github\LKShop\umeng_sharelibrary\umeng_sharelibrary.iml" filepath="E:\code_github\LKShop\umeng_sharelibrary\umeng_sharelibrary.iml" />
     </modules>
   </component>
 </project>

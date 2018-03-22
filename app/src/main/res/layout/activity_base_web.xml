@@ -19,7 +19,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <net.anumbrella.lkshop.widget.BrowserLayout
+    <com.gt.store.widget.BrowserLayout
         android:id="@+id/base_web_browser_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"

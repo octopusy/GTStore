@@ -1,5 +1,3 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
     repositories {
         jcenter()
@@ -7,9 +5,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.0'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
@@ -22,4 +17,48 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    applicationId = "com.gt.store"
+    applicationId_Channel_zhf = "com.gt.store"
+
+    appName = "广淘"
+    appDebugName = "广淘-测试"
+    appNameChannel_zhf = "广淘"
+
+    versionCode = 1000
+    versionName = "1.0.0"
+
+    // Sdk and tools
+    minSdkVersion = 17
+    targetSdkVersion = 23
+    compileSdkVersion = 23
+    buildToolsVersion = '23.0.3'
+
+    // App dependencies
+    supportLibraryVersion = '23.4.0'
+    junit = '4.12'
+
+    okio = '1.6.0'
+    wireRunTime = '2.1.2'
+    judeUtils = '1.2.1'
+    butterKnife = '8.0.1'
+    fresco = '0.10.0'
+    fitsystemwindowlayout = '2.1.5'
+    easyrecyclerview = '3.5.7'
+    materialish = '1.7'
+    rollviewpager = '1.3.1'
+    customedittext = '1.0.0'
+    gson = '2.4'
+    retrofit = '2.0.0-beta3'
+    okhttp = '3.0.0-RC1'
+    rxandroid = '1.1.0'
+    dialogplus = '1.11@aar'
+    emoji = '0.3.0'
+
+    loggerVersion = "2.1.1"
+
+    UMENG_APPKEY = '576beb9467e58e2df20013c1'
+    UMENG_MESSAGE_SECRET = '9bd80de6d4aa59c213fdd7474dd73b10'
 }
